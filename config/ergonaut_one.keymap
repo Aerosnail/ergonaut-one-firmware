@@ -28,7 +28,7 @@
             bindings = <
 &kp GRAVE  &kp B       &kp L           &kp D        &kp W             &kp Z  &kp APOSTROPHE  &kp F            &kp O        &kp U       &kp J       &kp DEL
 &kp ESC    &mt N LGUI  &mt R LEFT_ALT  &mt T LCTRL  &mt S LEFT_SHIFT  &kp G  &kp Y           &mt H RSHIFT     &mt A RCTRL  &mt E RALT  &mt I RGUI  &kp SEMI
-&kp LCTRL  &kp Q       &kp X           &kp M        &kp C             &kp V  &kp N           &kp P            &kp DOT      &kp MINUS   &kp FSLH    &none
+&kp LCTRL  &kp Q       &kp X           &kp M        &kp C             &kp V  &kp K           &kp P            &kp DOT      &kp MINUS   &kp FSLH    &none
                                        &kp TAB      &lt 1 SPACE       &to 3  &to 4           &lt 2 BACKSPACE  &kp ESCAPE
             >;
         };
