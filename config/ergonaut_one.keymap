@@ -16,8 +16,8 @@
         compatible = "zmk,conditional-layers";
 
         tri-layer {
-            if-layers = <2 2>;
-            then-layer = <3>;
+            if-layers = <5 5>;
+            then-layer = <4>;
         };
     };
 
@@ -56,7 +56,7 @@
 &kp GRAVE  &kp B            &kp L            &kp D         &kp W         &kp Z      &kp APOSTROPHE  &kp F            &kp O         &kp U        &kp J        &kp DEL
 &kp TAB    &hml LEFT_GUI N  &hml LEFT_ALT R  &hml LCTRL T  &hml LSHFT S  &kp G      &kp Y           &hmr RSHIFT H    &hmr RCTRL A  &hmr RALT E  &hmr RGUI I  &kp SEMI
 &kp LCTRL  &kp Q            &kp X            &kp M         &kp C         &kp V      &kp K           &kp P            &kp DOT       &kp MINUS    &kp FSLH     &none
-                                             &kp ESCAPE    &lt 1 SPACE   &lt 3 TAB  &lt 4 SEMI      &lt 2 BACKSPACE  &kp RET
+                                             &kp ESCAPE    &lt 1 SPACE   &lt 4 TAB  &lt 3 SEMI      &lt 2 BACKSPACE  &kp RET
             >;
         };
 
@@ -78,21 +78,21 @@
             >;
         };
 
-        adjust_layer {
-            bindings = <
-&bootloader  &none         &none         &none         &none         &none         &none         &none         &none         &none         &none         &bootloader
-&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
-&sys_reset   &none         &none         &none         &none         &none         &none         &none         &none         &none         &none         &sys_reset
-                                         &trans        &none         &trans        &none         &trans        &trans
-            >;
-        };
-
         qwerty {
             bindings = <
 &trans  &kp Q  &kp W  &kp E   &kp R   &kp T   &kp Y   &kp U   &kp I      &kp O    &kp P     &trans
 &trans  &kp A  &kp S  &kp D   &kp F   &kp G   &kp H   &kp J   &kp K      &kp L    &kp SEMI  &trans
 &trans  &kp Z  &kp X  &kp C   &kp V   &kp B   &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &trans
                       &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        adjust_layer {
+            bindings = <
+&bootloader  &none         &none         &none         &none         &none         &none         &none         &none         &none         &none         &bootloader
+&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
+&sys_reset   &none         &none         &none         &none         &none         &none         &none         &none         &none         &none         &sys_reset
+                                         &trans        &none         &trans        &none         &trans        &trans
             >;
         };
     };
