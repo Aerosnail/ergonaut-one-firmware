@@ -21,7 +21,7 @@
         };
     };
 
-    rpi: require_prior_idle {
+    hml: homerow_mods_left {
         compatible = "zmk,behavior-hold-tap";
         #binding-cells = <2>;
         flavor = "balanced";
@@ -29,15 +29,27 @@
         quick-tap-ms = <200>;
         require-prior-idle-ms = <150>;
         bindings = <&kp>, <&kp>;
+        hold-trigger-on-release;
+        hold-trigger-key-positions = <KEYS_R KEYS_T>;
     };
-
+    hmr: homerow_mods_right {
+        compatible = "zmk,behavior-hold-tap";
+        #binding-cells = <2>;
+        flavor = "balanced";
+        tapping-term-ms = <280>;
+        quick-tap-ms = <200>;
+        require-prior-idle-ms = <150>;
+        bindings = <&kp>, <&kp>;
+        hold-trigger-on-release;
+        hold-trigger-key-positions = <KEYS_L KEYS_T>;
+    };
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
 &kp GRAVE  &kp B           &kp L           &kp D        &kp W        &kp Z  &kp APOSTROPHE  &kp F            &kp O        &kp U       &kp J       &kp DEL
-&kp TAB    &mt LEFT_GUI N  &mt LEFT_ALT R  &mt LCTRL T  &mt LSHFT S  &kp G  &kp Y           &mt RSHIFT H     &mt RCTRL A  &mt RALT E  &mt RGUI I  &kp SEMI
+&kp TAB    &hml LEFT_GUI N &hml LEFT_ALT R &hml LCTRL T &hml LSHFT S &kp G  &kp Y           &hmr RSHIFT H    &hmr RCTRL A &hmr RALT E &hmr RGUI I &kp SEMI
 &kp LCTRL  &kp Q           &kp X           &kp M        &kp C        &kp V  &kp K           &kp P            &kp DOT      &kp MINUS   &kp FSLH    &none
                                            &kp ESCAPE   &lt 1 SPACE  &to 3  &to 4           &lt 2 BACKSPACE  &kp RET
             >;
