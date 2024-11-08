@@ -60,7 +60,7 @@
             >;
         };
 
-        lower {
+        lower_layer {
             bindings = <
 &trans  &kp LS(PRCNT)  &kp LBKT      &kp RBKT      &kp LS(UNDER)  &kp LS(AMPS)   &kp DOT        &kp LS(DQT)  &kp LS(LT)    &kp LS(GT)  &kp SQT        &trans
 &trans  &kp LS(QMARK)  &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(COLON)  &kp LS(PIPE)   &kp LS(POUND)  &kp EQUAL    &kp LS(PLUS)  &kp MINUS   &kp LS(EXCL)   &trans
@@ -69,7 +69,7 @@
             >;
         };
 
-        raise {
+        raise_layer {
             bindings = <
 &mt LGUI KP_NUM  &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &kp C_VOL_UP  &kp HOME  &kp PSCRN  &kp PG_UP  &bootloader      &kp CLCK
 &mt LCTRL EQUAL  &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS   &kp C_MUTE    &kp LEFT  &kp UP     &kp RIGHT  &kp INS          &mt RCTRL K_APP
