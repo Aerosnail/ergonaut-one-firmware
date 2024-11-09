@@ -65,7 +65,7 @@
             bindings = <
 &trans  &trans  &kp N7  &kp N8  &kp N9  &kp LS(PLUS)  &kp C_VOLUME_UP    &kp HOME  &kp UP    &kp END    &kp PG_UP  &trans
 &trans  &trans  &kp N4  &kp N5  &kp N6  &kp EQUAL     &kp C_VOLUME_DOWN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &trans
-&trans  &kp N0  &kp N1  &kp N2  &kp N3  &kp MINUS     &kp K_MUTE         &trans    &trans    &trans     &trans     &trans
+&trans  &kp N0  &kp N1  &kp N2  &kp N3  &kp MINUS     &kp K_MUTE         &trans    &trans    &trans     &kp CAPS   &trans
                         &trans  &trans  &trans        &trans             &trans    &trans
             >;
         };
