@@ -49,7 +49,7 @@
 &kp GRAVE  &kp B            &kp L            &kp D         &kp W         &kp Z      &kp APOSTROPHE  &kp F            &kp O         &kp U        &kp J        &kp DEL
 &kp TAB    &hml LEFT_GUI N  &hml LEFT_ALT R  &hml LCTRL T  &hml LSHFT S  &kp G      &kp Y           &hmr RSHIFT H    &hmr RCTRL A  &hmr RALT E  &hmr RGUI I  &kp SEMI
 &kp LCTRL  &kp Q            &kp X            &kp M         &kp C         &kp V      &kp K           &kp P            &kp DOT       &kp MINUS    &kp FSLH     &none
-                                             &kp ESCAPE    &lt 1 SPACE   &lt 3 TAB  &lt 3 SEMI      &lt 2 BACKSPACE  &kp RET
+                                             &kp ESCAPE    &lt 2 SPACE   &lt 3 TAB  &lt 3 SEMI      &lt 1 BACKSPACE  &kp RET
             >;
         };
 
