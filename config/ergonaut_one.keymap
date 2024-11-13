@@ -19,8 +19,8 @@
         #binding-cells = <2>;
         flavor = "balanced";
         tapping-term-ms = <200>;
-        quick-tap-ms = <100>;
-        require-prior-idle-ms = <150>;
+        quick-tap-ms = <150>;
+        require-prior-idle-ms = <100>;
         bindings = <&kp>, <&kp>;
 
         hold-trigger-on-release;
@@ -31,8 +31,8 @@
         #binding-cells = <2>;
         flavor = "balanced";
         tapping-term-ms = <200>;
-        quick-tap-ms = <100>;
-        require-prior-idle-ms = <150>;
+        quick-tap-ms = <150>;
+        require-prior-idle-ms = <100>;
         bindings = <&kp>, <&kp>;
 
         hold-trigger-on-release;
@@ -65,7 +65,7 @@
         symbols {
             bindings = <
 &trans  &kp PERCENT  &kp LBKT              &kp RBKT               &kp SEMI    &kp AMPERSAND  &kp UNDER  &kp COMMA  &kp LESS_THAN  &kp GREATER_THAN  &kp GRAVE  &trans
-&trans  &kp QMARK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON   &kp PIPE       &kp HASH   &kp EQUAL  &kp PLUS       &kp MINUS         &kp EXCL   &trans
+&trans  &kp QMARK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON   &kp PIPE       &kp HASH   &kp EQUAL  &kp LS(EQUAL)  &kp MINUS         &kp EXCL   &trans
 &trans  &kp AT       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR  &kp TILDE      &up_dir    &kp BSLH   &kp ASTERISK   &kp FSLH          &kp CARET  &none
                                            &trans                 &trans      &trans         &trans     &trans     &trans
             >;
