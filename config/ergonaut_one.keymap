@@ -44,6 +44,30 @@
         hold-trigger-on-release;
     };
 
+    hml_shft: homerow_mods_left {
+        compatible = "zmk,behavior-hold-tap";
+        #binding-cells = <2>;
+        flavor = "balanced";
+        tapping-term-ms = <150>;
+        quick-tap-ms = <100>;
+        require-prior-idle-ms = <150>;
+        bindings = <&kp>, <&kp>;
+
+        hold-trigger-on-release;
+    };
+
+    hmr_shft: homerow_mods_right {
+        compatible = "zmk,behavior-hold-tap";
+        #binding-cells = <2>;
+        flavor = "balanced";
+        tapping-term-ms = <150>;
+        quick-tap-ms = <100>;
+        require-prior-idle-ms = <150>;
+        bindings = <&kp>, <&kp>;
+
+        hold-trigger-on-release;
+    };
+
 	lt_th: layer_tap_thumbs {
 		compatible = "zmk,behavior-hold-tap";
 		flavor = "hold-preferred";
@@ -71,10 +95,10 @@
 
         default_layer {
             bindings = <
-&none  &kp B            &kp L            &kp D         &kp W            &kp Z         &kp APOS       &kp F              &kp O         &kp U        &kp J        &none
-&none  &hml LEFT_GUI N  &hml LEFT_ALT R  &hml LCTRL T  &hml LSHFT S     &kp G         &kp Y          &hmr RSHIFT H      &hmr RCTRL A  &hmr RALT E  &hmr RGUI I  &none
-&none  &kp Q            &kp X            &kp M         &kp C            &kp V         &kp K          &kp P              &kp DOT       &kp MINUS    &kp FSLH     &none
-                                         &kp ESCAPE    &lt_th 2 SPACE   &lt_th 3 TAB  &lt_th 3 SEMI  &lt_th 1 BACKSPACE &kp RET
+&none  &kp B            &kp L            &kp D         &kp W                &kp Z         &kp APOS       &kp F                  &kp O         &kp U        &kp J        &none
+&none  &hml LEFT_GUI N  &hml LEFT_ALT R  &hml LCTRL T  &hml_shft LSHFT S    &kp G         &kp Y          &hmr_shft RSHIFT H     &hmr RCTRL A  &hmr RALT E  &hmr RGUI I  &none
+&none  &kp Q            &kp X            &kp M         &kp C                &kp V         &kp K          &kp P                  &kp DOT       &kp MINUS    &kp FSLH     &none
+                                         &kp ESCAPE    &lt_th 2 SPACE       &lt_th 3 TAB  &lt_th 3 SEMI  &lt_th 1 BACKSPACE     &kp RET
             >;
         };
 
