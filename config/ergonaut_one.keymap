@@ -7,14 +7,14 @@
 #define RSE 2
 #define ADJ 3
 
-&lt { 
-	quick-tap-ms = <150>; 
-	tapping-term-ms = <150>;
+&lt {
+    quick-tap-ms = <150>;
+    tapping-term-ms = <150>;
 };
 
-&mt { 
-	quick-tap-ms = <150>; 
-	tapping-term-ms = <150>;
+&mt {
+    quick-tap-ms = <150>;
+    tapping-term-ms = <150>;
 };
 
 / {
@@ -68,15 +68,15 @@
         hold-trigger-on-release;
     };
 
-	lt_th: layer_tap_thumbs {
-		compatible = "zmk,behavior-hold-tap";
-		flavor = "hold-preferred";
-		tapping-term-ms = <200>;
-		quick-tap-ms = <200>;
-		quick-tap-ms = <200>;
-		#binding-cells = <2>;
-		bindings = <&mo>, <&kp>;
-	};
+    lt_th: layer_tap_thumbs {
+        compatible = "zmk,behavior-hold-tap";
+        flavor = "hold-preferred";
+        tapping-term-ms = <200>;
+        quick-tap-ms = <200>;
+        quick-tap-ms = <200>;
+        #binding-cells = <2>;
+        bindings = <&mo>, <&kp>;
+    };
 
     behaviors {
     };
@@ -95,27 +95,27 @@
 
         default_layer {
             bindings = <
-&none  &kp B            &kp L            &kp D         &kp W                &kp Z         &kp APOS       &kp F                  &kp O         &kp U        &kp J        &none
-&none  &hml LEFT_GUI N  &hml LEFT_ALT R  &hml LCTRL T  &hml_shft LSHFT S    &kp G         &kp Y          &hmr_shft RSHIFT H     &hmr RCTRL A  &hmr RALT E  &hmr RGUI I  &none
-&none  &kp Q            &kp X            &kp M         &kp C                &kp V         &kp K          &kp P                  &kp DOT       &kp MINUS    &kp FSLH     &none
-                                         &kp ESCAPE    &lt 2 SPACE          &lt 3 TAB     &lt 3 SEMI     &lt_th 1 BACKSPACE     &kp RET
+&none  &kp B            &kp L            &kp D         &kp W              &kp Z      &kp APOS    &kp F               &kp O         &kp U        &kp J        &none
+&none  &hml LEFT_GUI N  &hml LEFT_ALT R  &hml LCTRL T  &hml_shft LSHFT S  &kp G      &kp Y       &hmr_shft RSHIFT H  &hmr RCTRL A  &hmr RALT E  &hmr RGUI I  &none
+&none  &kp Q            &kp X            &kp M         &kp C              &kp V      &kp K       &kp P               &kp DOT       &kp MINUS    &kp FSLH     &none
+                                         &kp ESCAPE    &lt 2 SPACE        &lt 3 TAB  &lt 3 SEMI  &lt_th 1 BACKSPACE  &kp RET
             >;
         };
 
         symbols {
             bindings = <
-&trans  &kp PERCENT  &kp LBKT              &kp RBKT               &kp SEMI    &kp AMPERSAND  &kp APOS  &kp COMMA  &kp LESS_THAN  &kp GREATER_THAN  &kp GRAVE  &trans
-&trans  &kp QMARK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON   &kp PIPE       &kp HASH  &kp EQUAL  &kp LS(EQUAL)  &kp MINUS         &kp EXCL   &trans
-&trans  &kp AT       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR  &kp TILDE      &cd       &kp BSLH   &kp ASTERISK   &kp FSLH          &kp CARET  &none
-                                           &trans                 &trans      &trans         &trans    &trans     &trans
+&trans  &kp PERCENT  &kp LBKT              &kp RBKT               &kp SEMI    &kp AMPERSAND  &kp DOUBLE_QUOTES  &kp COMMA  &kp LESS_THAN  &kp GREATER_THAN  &kp GRAVE  &trans
+&trans  &kp QMARK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON   &kp PIPE       &kp HASH           &kp EQUAL  &kp LS(EQUAL)  &kp MINUS         &kp EXCL   &trans
+&trans  &kp AT       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR  &kp TILDE      &kp APOSTROPHE     &kp BSLH   &kp ASTERISK   &kp FSLH          &kp CARET  &none
+                                           &trans                 &trans      &trans         &trans             &trans     &trans
             >;
         };
 
         navigation {
             bindings = <
-&trans  &kp ASTERISK  &kp N7  &kp N8  &kp N9  &kp PLUS   &kp C_VOLUME_UP    &kp HOME      &kp UP         &kp END    &kp PG_UP        &trans
-&trans  &kp SLASH     &kp N4  &kp N5  &kp N6  &kp MINUS  &kp C_VOLUME_DOWN  &kp LEFT      &kp DOWN       &kp RIGHT  &hmr RGUI PG_DN  &trans
-&trans  &kp N0        &kp N1  &kp N2  &kp N3  &kp EQUAL  &kp K_MUTE         &kp C_BRI_DN  &kp C_BRI_UP   &trans     &caps_word       &trans
+&trans  &kp ASTERISK  &kp N7  &kp N8  &kp N9  &kp PLUS   &kp C_VOLUME_UP    &kp HOME      &kp UP        &kp END    &kp PG_UP        &trans
+&trans  &kp SLASH     &kp N4  &kp N5  &kp N6  &kp MINUS  &kp C_VOLUME_DOWN  &kp LEFT      &kp DOWN      &kp RIGHT  &hmr RGUI PG_DN  &trans
+&trans  &kp N0        &kp N1  &kp N2  &kp N3  &kp EQUAL  &kp K_MUTE         &kp C_BRI_DN  &kp C_BRI_UP  &trans     &caps_word       &trans
                               &trans  &trans  &trans     &trans             &trans        &trans
             >;
         };
