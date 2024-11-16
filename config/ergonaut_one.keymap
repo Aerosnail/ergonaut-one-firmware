@@ -44,7 +44,7 @@
         hold-trigger-on-release;
     };
 
-    hml_shft: homerow_mods_left {
+    hml_shft: homerow_mods_left_shift {
         compatible = "zmk,behavior-hold-tap";
         #binding-cells = <2>;
         flavor = "balanced";
@@ -56,7 +56,7 @@
         hold-trigger-on-release;
     };
 
-    hmr_shft: homerow_mods_right {
+    hmr_shft: homerow_mods_right_shift {
         compatible = "zmk,behavior-hold-tap";
         #binding-cells = <2>;
         flavor = "balanced";
