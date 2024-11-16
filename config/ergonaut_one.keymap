@@ -7,9 +7,13 @@
 #define RSE 2
 #define ADJ 3
 
-&lt { quick-tap-ms = <200>; };
+&lt { 
+	quick-tap-ms = <200>; 
+};
 
-&mt { quick-tap-ms = <200>; };
+&mt { 
+	quick-tap-ms = <200>; 
+};
 
 / {
     conditional_layers { compatible = "zmk,conditional-layers"; };
@@ -74,8 +78,8 @@
         navigation {
             bindings = <
 &trans  &kp ASTERISK  &kp N7  &kp N8  &kp N9  &kp PLUS   &kp C_VOLUME_UP    &kp HOME      &kp UP         &kp END    &kp PG_UP        &trans
-&trans  &kp EQUAL     &kp N4  &kp N5  &kp N6  &kp MINUS  &kp C_VOLUME_DOWN  &kp LEFT      &kp DOWN       &kp RIGHT  &hmr RGUI PG_DN  &trans
-&trans  &kp SLASH     &kp N1  &kp N2  &kp N3  &kp N0     &kp K_MUTE         &kp C_BRI_DN  &kp C_BRI_UP   &trans     &kp CAPS         &trans
+&trans  &kp SLASH     &kp N4  &kp N5  &kp N6  &kp MINUS  &kp C_VOLUME_DOWN  &kp LEFT      &kp DOWN       &kp RIGHT  &hmr RGUI PG_DN  &trans
+&trans  &kp N0        &kp N1  &kp N2  &kp N3  &kp EQUAL  &kp K_MUTE         &kp C_BRI_DN  &kp C_BRI_UP   &trans     &caps_word       &trans
                               &trans  &trans  &trans     &trans             &trans        &trans
             >;
         };
