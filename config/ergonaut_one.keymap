@@ -89,6 +89,27 @@
             bindings = <&kp C &kp D &kp SPACE>;
             label = "CD";
         };
+
+        ls_lzha: ls_lzha {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp L &kp S &kp SPACE &kp MINUS &kp L &kp LS(Z) &kp H &kp A &kp SPACE>;
+            label = "LS_LZHA";
+        };
+
+        shebang: shebang {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp POUND &kp EXCL &kp FSLH>;
+            label = "SHEBANG";
+        };
+
+        nvim: nvim {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N &kp V &kp I &kp M &kp SPACE>;
+            label = "NVIM";
+        };
     };
 
     keymap {
@@ -107,7 +128,7 @@
             bindings = <
 &trans  &kp PERCENT  &kp LBKT              &kp RBKT               &kp SEMI    &kp AMPERSAND  &kp DOUBLE_QUOTES  &kp COMMA  &kp LESS_THAN  &kp GREATER_THAN  &kp GRAVE  &trans
 &trans  &kp QMARK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON   &kp PIPE       &kp HASH           &kp EQUAL  &kp MINUS      &kp RS(EQUAL)     &kp EXCL   &trans
-&trans  &kp AT       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR  &kp TILDE      &kp APOSTROPHE     &kp BSLH   &kp ASTERISK   &kp FSLH          &kp CARET  &none
+&trans  &kp AT       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR  &kp TILDE      &shebang           &kp BSLH   &kp ASTERISK   &kp FSLH          &kp CARET  &none
                                            &trans                 &trans      &trans         &trans             &trans     &trans
             >;
         };
@@ -116,17 +137,17 @@
             bindings = <
 &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans  &kp C_VOLUME_UP    &kp HOME      &kp UP        &kp END    &kp PG_UP        &trans
 &trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans  &kp C_VOLUME_DOWN  &kp LEFT      &kp DOWN      &kp RIGHT  &hmr RGUI PG_DN  &trans
-&trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans  &kp K_MUTE         &kp C_BRI_DN  &kp C_BRI_UP  &trans     &caps_word       &trans
+&trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans  &kp K_MUTE         &kp C_BRI_DN  &kp C_BRI_UP  &kp DEL    &caps_word       &trans
                          &trans   &trans   &trans  &trans             &trans        &trans
             >;
         };
 
-        numbers {
+        num_macro {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LS(PLUS)  &kp N7  &kp N8  &kp N9  &kp LS(STAR)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp EQUAL     &kp N4  &kp N5  &kp N6  &kp N0        &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp MINUS     &kp N1  &kp N2  &kp N3  &kp FSLH      &trans
-                        &trans  &trans  &trans  &trans        &trans  &trans
+&trans  &trans  &trans  &trans  &nvim     &trans  &kp LS(PLUS)  &kp N7  &kp N8  &kp N9  &kp LS(STAR)  &trans
+&trans  &trans  &trans  &cd     &ls_lzha  &trans  &kp EQUAL     &kp N4  &kp N5  &kp N6  &kp N0        &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &kp MINUS     &kp N1  &kp N2  &kp N3  &kp FSLH      &trans
+                        &trans  &trans    &trans  &trans        &trans  &trans
             >;
         };
 
