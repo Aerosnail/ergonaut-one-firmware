@@ -90,10 +90,10 @@
             label = "CD";
         };
 
-        ls_lzha: ls_lzha {
+        ls: ls_lzha {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp L &kp S &kp SPACE &kp MINUS &kp L &kp LS(Z) &kp H &kp A &kp SPACE>;
+            bindings = <&kp L &kp S &kp SPACE>;
             label = "LS_LZHA";
         };
 
@@ -131,6 +131,20 @@
             bindings = <&kp DOT &kp DOT &kp FSLH>;
             label = "UPDIR";
         };
+
+        mv: mv {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp M &kp V &kp SPACE>;
+            label = "MV";
+        };
+
+        copy: cp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C &kp P &kp SPACE>;
+            label = "CP";
+        };
     };
 
     keymap {
@@ -165,10 +179,10 @@
 
         num_macro {
             bindings = <
-&trans  &trans  &trans  &sudo   &nvim     &trans  &kp LS(PLUS)  &kp N7  &kp N8  &kp N9  &kp LS(STAR)  &trans
-&trans  &trans  &ssh    &cd     &ls_lzha  &git    &kp EQUAL     &kp N4  &kp N5  &kp N6  &kp N0        &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &kp MINUS     &kp N1  &kp N2  &kp N3  &kp FSLH      &trans
-                        &trans  &trans    &trans  &trans        &trans  &trans
+&trans  &trans  &trans  &sudo   &nvim   &trans  &kp LS(PLUS)  &kp N7  &kp N8  &kp N9  &kp LS(STAR)  &trans
+&trans  &trans  &ssh    &ls     &cd     &git    &kp EQUAL     &kp N4  &kp N5  &kp N6  &kp N0        &trans
+&trans  &trans  &trans  &mv     &copy   &trans  &kp MINUS     &kp N1  &kp N2  &kp N3  &kp FSLH      &trans
+                        &trans  &trans  &trans  &trans        &trans  &trans
             >;
         };
 
