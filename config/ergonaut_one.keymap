@@ -170,7 +170,7 @@
             bindings = <
 &trans  &kp PERCENT  &kp LBKT              &kp RBKT               &kp SEMI    &kp AMPERSAND  &kp DOUBLE_QUOTES  &kp COMMA  &kp LESS_THAN  &kp GREATER_THAN  &kp GRAVE  &trans
 &trans  &kp QMARK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON   &kp PIPE       &kp HASH           &kp EQUAL  &kp MINUS      &kp RS(EQUAL)     &kp EXCL   &trans
-&trans  &kp AT       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR  &kp TILDE      &updir             &kp BSLH   &kp ASTERISK   &kp FSLH          &kp CARET  &none
+&trans  &kp AT       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR  &kp TILDE      &updir             &kp BSLH   &kp ASTERISK   &kp FSLH          &kp CARET  &trans
                                            &trans                 &trans      &trans         &trans             &trans     &trans
             >;
         };
@@ -179,15 +179,15 @@
             bindings = <
 &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans  &kp C_VOLUME_UP    &kp HOME      &kp UP        &kp END    &kp PG_UP        &trans
 &trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans  &kp C_VOLUME_DOWN  &kp LEFT      &kp DOWN      &kp RIGHT  &hmr RGUI PG_DN  &trans
-&trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans  &kp K_MUTE         &kp C_BRI_DN  &kp C_BRI_UP  &kp DEL    &caps_word       &trans
-                         &trans   &trans   &trans  &trans             &trans        &trans
+&trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans  &kp K_MUTE         &kp C_BRI_DN  &kp C_BRI_UP  &none      &none            &trans
+                         &trans   &trans   &trans  &trans             &kp DEL       &caps_word
             >;
         };
 
         num_macro {
             bindings = <
 &trans  &trans  &trans  &sudo   &nvim   &trans  &kp LS(PLUS)  &kp N7  &kp N8  &kp N9  &kp LS(STAR)  &trans
-&trans  &trans  &ssh    &ls     &cd     &git    &kp EQUAL     &kp N4  &kp N5  &kp N6  &kp N0        &trans
+&trans  &trans  &trans  &ls     &cd     &git    &kp EQUAL     &kp N4  &kp N5  &kp N6  &kp N0        &trans
 &trans  &trans  &trans  &mv     &cp     &rm     &kp MINUS     &kp N1  &kp N2  &kp N3  &kp FSLH      &trans
                         &trans  &trans  &trans  &trans        &trans  &trans
             >;
