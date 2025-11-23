@@ -154,6 +154,25 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        cd {
+            bindings = <&cd>;
+            key-positions = <15 16>;
+        };
+
+        nvim {
+            bindings = <&nvim>;
+            key-positions = <14 16>;
+        };
+
+        mv {
+            bindings = <&mv>;
+            key-positions = <14 15>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
