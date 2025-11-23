@@ -160,16 +160,25 @@
         cd {
             bindings = <&cd>;
             key-positions = <15 16>;
+            timeout-ms = <25>;
         };
 
         nvim {
             bindings = <&nvim>;
             key-positions = <14 16>;
+            timeout-ms = <25>;
         };
 
         mv {
             bindings = <&mv>;
             key-positions = <14 15>;
+            timeout-ms = <25>;
+        };
+
+        ls {
+            bindings = <&ls>;
+            key-positions = <3 16>;
+            timeout-ms = <25>;
         };
     };
 
