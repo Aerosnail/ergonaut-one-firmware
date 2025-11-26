@@ -159,20 +159,20 @@
 
         cd {
             bindings = <&cd>;
-            key-positions = <15 16>;
-            timeout-ms = <15>;
+            key-positions = <19 21>;
+            timeout-ms = <20>;
         };
 
         nvim {
             bindings = <&nvim>;
             key-positions = <14 16>;
-            timeout-ms = <15>;
+            timeout-ms = <20>;
         };
 
         ls {
             bindings = <&ls>;
-            key-positions = <14 15>;
-            timeout-ms = <15>;
+            key-positions = <20 22>;
+            timeout-ms = <20>;
         };
     };
 
