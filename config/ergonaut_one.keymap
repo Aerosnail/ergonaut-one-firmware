@@ -24,9 +24,9 @@
         compatible = "zmk,behavior-hold-tap";
         #binding-cells = <2>;
         flavor = "balanced";
-        tapping-term-ms = <320>;
+        tapping-term-ms = <350>;
         quick-tap-ms = <125>;
-        require-prior-idle-ms = <200>;
+        require-prior-idle-ms = <300>;
         bindings = <&kp>, <&kp>;
 
         hold-trigger-on-release;
@@ -36,9 +36,9 @@
         compatible = "zmk,behavior-hold-tap";
         #binding-cells = <2>;
         flavor = "balanced";
-        tapping-term-ms = <320>;
+        tapping-term-ms = <350>;
         quick-tap-ms = <125>;
-        require-prior-idle-ms = <200>;
+        require-prior-idle-ms = <300>;
         bindings = <&kp>, <&kp>;
 
         hold-trigger-on-release;
@@ -48,7 +48,7 @@
         compatible = "zmk,behavior-hold-tap";
         #binding-cells = <2>;
         flavor = "balanced";
-        tapping-term-ms = <250>;
+        tapping-term-ms = <350>;
         quick-tap-ms = <100>;
         require-prior-idle-ms = <0>;
         bindings = <&kp>, <&kp>;
@@ -61,7 +61,7 @@
         compatible = "zmk,behavior-hold-tap";
         #binding-cells = <2>;
         flavor = "balanced";
-        tapping-term-ms = <250>;
+        tapping-term-ms = <350>;
         quick-tap-ms = <100>;
         require-prior-idle-ms = <0>;
         bindings = <&kp>, <&kp>;
@@ -154,27 +154,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        cd {
-            bindings = <&cd>;
-            key-positions = <19 21>;
-            timeout-ms = <20>;
-        };
-
-        nvim {
-            bindings = <&nvim>;
-            key-positions = <14 16>;
-            timeout-ms = <20>;
-        };
-
-        ls {
-            bindings = <&ls>;
-            key-positions = <20 22>;
-            timeout-ms = <20>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -208,8 +188,8 @@
 
         num_macro {
             bindings = <
-&trans  &trans  &trans  &sudo   &trans  &trans  &kp LS(PLUS)  &kp N7  &kp N8  &kp N9  &kp LS(STAR)  &trans
-&trans  &trans  &trans  &trans  &trans  &git    &kp EQUAL     &kp N4  &kp N5  &kp N6  &kp N0        &trans
+&trans  &trans  &trans  &sudo   &nvim   &trans  &kp LS(PLUS)  &kp N7  &kp N8  &kp N9  &kp LS(STAR)  &trans
+&trans  &trans  &trans  &ls     &cd     &git    &kp EQUAL     &kp N4  &kp N5  &kp N6  &kp N0        &trans
 &trans  &trans  &trans  &mv     &cp     &rm     &kp MINUS     &kp N1  &kp N2  &kp N3  &kp FSLH      &trans
                         &trans  &trans  &trans  &trans        &trans  &trans
             >;
