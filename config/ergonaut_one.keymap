@@ -28,8 +28,6 @@
         quick-tap-ms = <200>;
         require-prior-idle-ms = <150>;
         bindings = <&kp>, <&kp>;
-
-        hold-trigger-on-release;
     };
 
     hmr: homerow_mods_right {
@@ -40,8 +38,6 @@
         quick-tap-ms = <200>;
         require-prior-idle-ms = <150>;
         bindings = <&kp>, <&kp>;
-
-        hold-trigger-on-release;
     };
 
     hml_shft: homerow_mods_left_shift {
